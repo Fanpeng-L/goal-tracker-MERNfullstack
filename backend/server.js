@@ -10,9 +10,9 @@ const app = express();
 
 // middleware
 app.use(express.json());
-
 app.use(express.urlencoded({ extended: false }));
 
+// routes
 app.use("/api/goals", require("./routes/goalRoutes"));
 
 app.use(errorHandler); // override express default error handler
