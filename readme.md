@@ -4,7 +4,7 @@
 
 1. [Features](#features)
 2. [Installation](#installation)
-3. [Live Demo](#live+demo)
+3. [Demo](#demo)
 4. [License](#license)
 
 ## Features
@@ -50,7 +50,7 @@ Inside the .env file, add the following environment variables:
 
 ```plaintext
 PORT = 5000
-MONGO_URI = mongodb+srv://fanpeng1234:IuqbtmhMohlzt3ho@cluster0.py1nsf1.mongodb.net/
+MONGO_URI = XXXXXXXXXXXXXXXXXXXXXXXX/
 JWT_SECRET = abc123
 ```
 
@@ -58,26 +58,15 @@ Replace your_mongodb_connection_string with the connection string for your Mongo
 
 Replace your_jwt_secret with a secret key for JWT token generation.
 
-Running the App
-Start the backend server:
+Running the App:
 
 ```bash
-cd server
 npm start
 ```
 
-Start the frontend development server:
+Open your browser and navigate to http://localhost:5000 to view the app.
 
-```bash
-cd ../client
-npm start
-```
-
-Open your browser and navigate to http://localhost:3000 to view the app.
-
-## Live Demo
-
-[Click here 🔗 to try live demo!]()
+## Demo
 
 Preview:
 
