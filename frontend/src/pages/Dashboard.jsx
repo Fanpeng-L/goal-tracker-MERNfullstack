@@ -22,8 +22,9 @@ function Dashboard() {
 
     if (!user) {
       navigate("/login");
+    } else {
+      dispatch(getGoals());
     }
-    dispatch(getGoals());
 
     return () => {
       dispatch(reset());
@@ -37,8 +38,14 @@ function Dashboard() {
   return (
     <>
       <section className="heading">
-        <h1>Welcome back {user && user.name} !</h1>
-        <p>Your Goals Dashboard</p>
+        {!user ? (
+          <h1>Login and Set Your Goals!</h1>
+        ) : (
+          <>
+            <h1>Welcome back {user && user.name} !</h1>
+            <p>Your Goals Dashboard</p>
+          </>
+        )}
       </section>
 
       <GoalForm />

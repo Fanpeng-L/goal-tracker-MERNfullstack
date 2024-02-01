@@ -57,6 +57,10 @@ h3 {
   justify-content: space-between;
 }
 
+.logo img {
+  width: 200px;
+}
+
 .header ul li {
   margin-left: 20px;
 }
@@ -150,8 +154,13 @@ h3 {
 
 .form-group label {
   text-align: left;
-  display: block;
-  margin: 0 0 5px 3px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label span {
+  margin-right: 10px;
 }
 
 .btn {

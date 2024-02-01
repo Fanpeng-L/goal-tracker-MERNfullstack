@@ -1,7 +1,8 @@
 import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { UseSelector, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { logout, reset } from "../features/auth/authSlice";
+import logo from "../assets/Logo.svg";
 
 function Header() {
   const navigate = useNavigate();
@@ -17,7 +18,9 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <Link to="/">GoalSetter</Link>
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <ul>
         {user ? (

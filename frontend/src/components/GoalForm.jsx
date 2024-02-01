@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createGoal } from "../features/goals/goalSlice";
+import { FaArrowDown } from "react-icons/fa";
 
 function GoalForm() {
   const [text, setText] = useState("");
@@ -18,7 +19,10 @@ function GoalForm() {
     <section className="form">
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="text">Goal</label>
+          <label className="input-label" htmlFor="text">
+            <span>Set a New Goal Here</span>
+            <FaArrowDown />
+          </label>
           <input
             type="text"
             name="text"
